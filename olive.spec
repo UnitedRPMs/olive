@@ -1,5 +1,5 @@
 Name:       olive
-Version:    0.1.0
+Version:    0.1.2
 Release:    7%{?dist}
 Summary:    Free non-linear video editor
 License:    GPLv3
@@ -54,6 +54,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
 
 
 %changelog
+
+* Fri May 15 2020 - David Va <davidva AT tuta DOT io> 0.1.2-1
+- Updated to 0.1.2
 
 * Fri Aug 09 2019 - David Va <davidva AT tuta DOT io> 0.1.0-1
 - Initial build
