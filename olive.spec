@@ -8,6 +8,7 @@ Summary:    Free non-linear video editor
 License:    GPLv3
 URL:        https://www.olivevideoeditor.org
 Source0:    https://github.com/olive-editor/%{name}/archive/%{version}.tar.gz 
+Source1:    org.olivevideoeditor.olive.metainfo.xml
 Patch:      ffmpeg_fix.patch
 
 BuildRequires:  gcc
@@ -40,6 +41,9 @@ Olive is a free non-linear video editor for Windows, macOS, and Linux.
 mkdir -p %{buildroot}%{_docdir}/%{name}
 mv docs/ %{buildroot}%{_docdir}/%{name}
 
+# Metainfo
+install -Dm 0644 %{S:1} %{buildroot}/%{_metainfodir}/org.olivevideoeditor.olive.metainfo.xml
+
 %check
 desktop-file-validate %{buildroot}/%{_datadir}/applications/*.desktop
 appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
@@ -54,6 +58,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
 %{_metainfodir}/*.appdata.xml
 %{_datadir}/mime/packages/*.xml
 %{_datadir}/icons/hicolor/*/*/*.png
+%{_metainfodir}/org.olivevideoeditor.olive.metainfo.xml
 
 
 %changelog

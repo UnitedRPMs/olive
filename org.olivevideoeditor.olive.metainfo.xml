@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.olivevideoeditor.olive</id>
+  
+  <name>olive</name>
+  <summary>Free non-linear video editor</summary>
+  
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  
+  <description>
+    <p>
+      Olive is a free non-linear video editor for Windows, macOS, and Linux.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">org.olivevideoeditor.Olive.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://www.olivevideoeditor.org/img/screenshot.jpg</image>
+    </screenshot>
+  </screenshots>
+</component>
