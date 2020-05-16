@@ -1,3 +1,6 @@
+# 
+%define _legacy_common_support 1
+
 Name:       olive
 Version:    0.1.2
 Release:    7%{?dist}
