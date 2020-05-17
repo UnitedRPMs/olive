@@ -14,6 +14,9 @@ Patch:      ffmpeg_fix.patch
 BuildRequires:  gcc
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(Qt5)
+BuildRequires:	pkgconfig(Qt5Multimedia)
+BuildRequires:	pkgconfig(Qt5Svg)
+BuildRequires:	qt5-linguist
 BuildRequires:  ffmpeg-devel >= 4.2
 BuildRequires:  frei0r-devel
 # Documentation
