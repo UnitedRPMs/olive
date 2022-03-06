@@ -1,11 +1,11 @@
 diff -ruN orig/CMakeLists.txt new/CMakeLists.txt
---- orig/CMakeLists.txt	2019-05-02 08:19:00.000000000 -0600
-+++ new/CMakeLists.txt	2019-08-09 22:19:07.032545574 -0600
-@@ -32,7 +32,7 @@
-   LinguistTools
+--- orig/CMakeLists.txt	2022-03-04 17:50:55.000000000 -0600
++++ new/CMakeLists.txt	2022-03-05 01:47:16.817719403 -0600
+@@ -120,7 +120,7 @@
  )
  
--find_package(FFMPEG 3.4 REQUIRED
+ # Link FFmpeg
+-find_package(FFMPEG 3.0 REQUIRED
 +find_package(FFMPEG REQUIRED
    COMPONENTS
    avutil
